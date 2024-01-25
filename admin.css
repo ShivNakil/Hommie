@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(236, 236, 236);
+}
+
+.container {
+    position: relative;
+    background-color: rgb(236, 236, 236);
+    height: 100vh;
+    width: 100%;
+}
+
+.container .navbar {
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.navbar .navlist {
+    display: flex;
+    gap: 3rem;
+}
+
+.container .navbar .logo {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .navlist {
+    list-style: none;
+    color: rgb(35, 35, 35);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(35, 35, 35);
+}
+
+.main{
+    margin: 2rem 5rem;
+    max-width: 100%;
+    align-items: center;
+    /* text-align: center; */
+    margin-left: 7rem;
+}
+
+#form{
+    border: none;
+    margin: 0px 3rem;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+input{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    background-color: white;
+}
+
+#submit{
+    background-color: bisque;
+    transition: ease-in-out 0.3s;
+    /* grid-row-start: 1; */
+}
+
+#submit:hover{
+    background-color: rgb(240, 189, 127)
+}
+
+legend{
+    font-size: 2rem;
+}

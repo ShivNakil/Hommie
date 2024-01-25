@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             email: email,
             password: password
         };
+        // console.log(loginInfo)
 
         let check = JSON.parse(localStorage.getItem(`${username}`))
 
@@ -31,7 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (password === confirmPassword) {
-            localStorage.setItem(`${username}`, JSON.stringify(loginInfo))          
+            // console.log(loginInfo)
+
+
+
+
+            localStorage.setItem(`${username}`, JSON.stringify(loginInfo))
+
+
+
+            
 
             document.querySelector("input[type='text']").value = "";
             document.querySelector("input[id='username']").value = "";
@@ -52,5 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "signUp.html";
 
         }
+
+
     })
 });

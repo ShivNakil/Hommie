@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+.container {
+    background-color: rgb(236, 236, 236);
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container .navbar {
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.navbar .navlist {
+    display: flex;
+    gap: 3rem;
+}
+
+.container .navbar .logo {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .navlist {
+    list-style: none;
+    color: rgb(35, 35, 35);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(35, 35, 35);
+}
+
+.main{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    /* max-width: 100%; */
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    /* max-width: 30%; */
+    height: 100vh;
+    /* background-color: aqua; */
+    margin: 2rem;
+    align-items: center;
+}
+img{
+    margin-top: 1.2rem;
+    width: 40rem;
+    border-radius: .5rem;
+    
+}
+#sub{
+    display: flex;
+}
+
+#sub1{
+    margin-left: 1.2rem;
+    width: 15rem;
+    display: flex;
+    align-self: flex-start;
+}
+#sub2{
+    margin-left: 1.2rem;
+    width: 15rem;
+    display: flex;
+    align-self: flex-start;
+}
+
+.information{
+    background-color: aquamarine;
+    /* max-width: 30rem; */
+    margin: 2rem;
+    gap: 3rem;
+}
+
+
+#title{
+    /* margin-top: 2rem; */
+    font-size: 2rem;
+    color: black;
+}
+
+#price{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: rgb(0, 169, 0) ;
+}
+
+#offers{
+    /* display: flex; */
+}
+
+#purchase{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    gap: 3rem;
+    margin: 2rem 0px;
+    list-style: none;
+    align-items: center;
+}
+
+#but{
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1rem ;
+}
+
+.addToCart{
+    background-color: rgba(255, 166, 0, 0.538);
+}
+
+.addToCart:hover{
+    background-color: rgba(255, 166, 0, 0.900);
+    cursor: pointer;
+}
+
+.buyNow{
+    background-color: rgba(0, 255, 0, 0.300);
+}
+.buyNow:hover{
+    background-color: rgba(0, 255, 0, 0.900);
+    cursor: pointer;
+}
+
+#availableOffers{
+    font-size: 18px;
+}
+
+#description .title{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#description .description{
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.716);
+}

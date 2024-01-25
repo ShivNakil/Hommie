@@ -4,8 +4,19 @@ const wait = (n) => new Promise((resolve) => setTimeout(resolve, n));
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form")
 
+    const username = document.querySelector("#username").value
+        const password = document.querySelector("#password").value
+        const hero = document.querySelector(".hero")
+
+    let setData = async function(str, period ,ref){
+        hero.style = "font-size: 40px; font-family: 'Poppins', sans-serif;"
+            hero.innerHTML = `${str}`
+            await wait(`${period}`);
+            window.location.href = `${ref}`;
+    }
+
     form.addEventListener('submit', async function (e) {
-        // e.preventDefault();
+        e.preventDefault();
 
         const username = document.querySelector("#username").value
         const password = document.querySelector("#password").value
@@ -17,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
             // setData(`No username found, Register first`, 3000, "signUp.html")
             hero.style = "font-size: 40px; font-family: 'Poppins', sans-serif;"
             hero.innerHTML = `No username found, Register first`
-            
             await wait(3000);
             window.location.href = "signUp.html";
         }
